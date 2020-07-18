@@ -43,7 +43,7 @@ EOF
 
 Fatal () { echo "$0: $@"; exit 1; }
 
-Have () { type -t "$1" >/dev/null; }
+Have () { type -t "$1" -qq >/dev/null; }
 
 # Option values.
 skip_cc=
